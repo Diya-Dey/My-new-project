@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http.equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+      <button onclick="fetch();">Click here to fetch</button>
+
+    <br>
+    <ul class="messages">
+     
+    </ul>
+</body> 
+</html>
+<script>
+  function fetch(){
+   $.ajax({
+     url:"https://run.mocky.io/v3/16375822-6d22-4d61-b131-6672e9e13884",
+     type: "POST",
+     dataType: "JSON",
+     data:JSON.stringify({}),
+     success:function(data){
+       $('.messages').append("<li>"+JSON.stringify(data)+"</li>")
+
+
+     }
+
+   })
+
+  }
+</script>
+</head>
+<body>
+<h1 align="center" style="color:burlywood">Demo Digit</h1>
+<h2 align="center" style="color:burlywood">Get 61 city-Kolkata, State-West Bengal</h2>
+<h2 align="center" style="color:burlywood">Phone Number - 8464946495, Email- gsgd@codomotive.com</h2>
+<h2 align="center" style="color:burlywood">GST No - GH6383738</h2>
+<hr style="height:2px;color:gray;background-color:gray">
+<table align="center"  width="1350">
+<tr>
+<td align="left" style="color:burlywood">Table No:</td>
+<td align="right" style="color:gold">Take Away</td>
+</tr>
+<tr>
+<td align="left" style="color:burlywood">Date-Time</td>
+<td align="right" style="color:gold">
+2020-10-28 19:38:48.0
+</td>
+</tr>
+</table>
+<table align="center" width="1350">
+<tr height="50" style="background-color:sienna; color:white;">
+<th>No</th>
+<th>Item Name</th>
+<th>Price</th>
+<th>QTY</th>
+<th>Amt.</th>
+</tr>
+<tr height="50">
+<td align="center">1</td>
+<td align="center">Tandoori chicken(half)</td>
+<td align="center">200</td>
+<td align="center">6</td>
+<td align="center">1200</td>
+</tr>
+</table>
+<hr color:gray;background-color:gray">
+<table align="center"  width="1350">
+<tr>
+<td align="left" style="color:sienna"><b>Sub Total</b></td>
+<td align="right" style="color:sienna"><b>Rs. 1200</b></td>
+</tr>
+<tr>
+<td align="left" style="color:sienna"><b>Discount</b><span>(0%)</span></td>
+<td align="right" style="color:sienna"><b>0.00</b></td>
+</tr>
+<tr>
+<td align="left" style="color:sienna; background-color:lightgrey"><b>Grand Total</b></td>
+<td align="right" style="color:sienna; background-color:lightgrey"><b>Rs. 1260</b></td>
+</tr>
+</table>
+<p width="1350" style="color:white; background-color:orange; font-size:35px" align="center">Thank you!</p>
+</body>
+</html>
